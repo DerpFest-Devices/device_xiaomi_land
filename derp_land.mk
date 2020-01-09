@@ -23,12 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 # Inherit some common Pixel Experience stuff
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
+# GApps
 TARGET_GAPPS_ARCH := arm64
 TARGET_MINIMAL_APPS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
 # Going official
-DERP_BUILDTYPE=Official
+DERP_BUILDTYPE := Official
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
