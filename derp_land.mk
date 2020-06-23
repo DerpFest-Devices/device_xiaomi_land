@@ -20,14 +20,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_m.mk)
 
-# Inherit some common Pixel Experience stuff
+# Inherit some common Derpfest stuff
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
-# GApps
-TARGET_GAPPS_ARCH := arm64
-TARGET_MINIMAL_APPS := true
+# Build type
+DERP_BUILD_ZIP_TYPE := VANILLA
+
+# Boot animation
 TARGET_BOOT_ANIMATION_RES := 720
-TARGET_SUPPORTS_GOOGLE_RECORDER := false
 
 # Going official
 DERP_BUILDTYPE := Official
